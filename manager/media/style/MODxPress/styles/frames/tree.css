@@ -1,0 +1,228 @@
+body {
+		background: #e5e5e5;
+		height: 100%;
+	}
+	.menuframebody ul, .menuframebody li {
+		position: relative !important;
+		line-height: 32px;
+		padding: 0px;
+		margin: 0px;
+		list-style: none !important;
+	}
+	.allframetop {
+		height:34px;
+		background: #888;
+	}
+	.allframetopitem {
+		width: 50%;
+		line-height: 34px;
+		float: left;
+	}
+	.menuframebody {
+		height: 100%;
+		box-sizing: border-box;
+		padding-top: 5px;
+	}
+	.menuframebody ul {
+		padding: 0px;
+		list-style: none;
+	}
+	.menuframebodywrapper {
+		min-height: 34px;
+		margin-bottom:5px !important;
+	}
+	.menuframebodyactivator, .menuframebody > .sidenavigation > li > a, .menuframebodyactivator > a {
+		line-height: 34px;
+		padding: 0px 10px;
+		height: 34px;
+		background: #e5e5e5;
+		color: #333 !important;
+		font-size: 15px;
+		font-weight: 400;
+		cursor: pointer;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		z-index: 10;
+	}
+	.menuframebodywrapper a {
+		text-decoration: none !important;
+		display: block;
+	}
+	.menuframebodycontaineritem, .menuframebodycontaineritem a, .menuframebodycontainer li, .menuframebodycontainer > li > a {
+		line-height: 34px;
+		padding: 0px 10px;
+		height: 34px;
+		color: #686868 !important;
+		text-decoration: none !important;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		z-index: 0;
+		margin: 0px !important;
+	}
+	.menuframebodycontainer > li > a {
+		font-size: 13px;
+	}
+	.menuframebodycontainer > li > a, .menuframebodyactivator > a  {
+		padding: 0px !important;
+	}
+	.menuframebody .menuframebodyactivator:hover, .menuframebody .menuframebodyactivator.active, .menuframebody > .sidenavigation > li > a.active, .menuframebody > .sidenavigation > li > a:hover, .menuframebodyactivator.active > a, .menuframebodyactivator:hover > a {
+		color: #fff !important;
+		background: #888;
+	}
+	.menuframebody .menuframebodyactivator:hover:after, .menuframebody .menuframebodyactivator.active:after, .menuframebody > .sidenavigation > li > a.active:after, .menuframebody > .sidenavigation > li > a:hover:after {
+		content: "";
+		height: 14px;
+		width: 14px;
+		ransform: rotate(45deg) ;
+		-webkit-transform: rotate(45deg) ;
+		-moz-transform: rotate(45deg) ;
+		-o-transform: rotate(45deg) ;
+		-ms-transform: rotate(45deg) ;
+		background: #fff;
+		position: absolute;
+		right: -7px;
+		top: 10px;
+	}
+	.menuframebody.collapsed .menuframebodyactivator:hover:after, .menuframebody.collapsed .menuframebodyactivator.active:after, .menuframebody.collapsed > .sidenavigation > li > a.active:after, .menuframebody.collapsed > .sidenavigation > li > a:hover:after{
+		height: 8px;
+		width: 8px;
+		right: -4px;
+		top: 13px;
+	}
+	.menuframebodycontainer {
+		padding-top: 5px !important;
+		padding-bottom: 1px !important;
+		background: #fff;
+		position: relative;
+	}
+	.menuframebodycontainer.collapsed {
+		display: none;
+		height: 0px;
+		overflow: hidden;
+	}
+	#treeHolder {
+		position: relative;
+		padding: 5px 0px 10px 0px;
+	}
+	a.active + .menuframebodycontainer .menuframebodywrapper a.active {
+		font-weight: bold;
+	}
+	.sidemenuIcon {
+		font-size: 18px;
+		line-height: 34px;
+		height: 34px;
+		opacity: .8;
+		margin-right: 10px;
+		width: 24px;
+		text-align: center;
+		position: absolute;
+		left: 0px;
+	}
+	.sidemenuText {
+		line-height: 34px;
+		text-align: left;
+		padding-left: 34px;
+		position: relative;
+	}
+	.treeButton, .treeButtonDisabled {
+		color: #686868 !important;
+		height: 24px;
+		width: 24px;
+		padding: 0px !important;
+		box-sizing: border-box;
+	}
+	.filetreeicon {
+		height: 24px;
+		width: 24px;
+		line-height: 24px;
+		font-size: 16px;
+		text-align: center;
+	}
+	.treeButton:hover .filetreeicon {
+		height: 22px;
+		width: 22px;
+		line-height: 22px;
+		color: #333 !important;
+	}
+	.menuframebodywrapper#collapse .sidemenuIcon {
+		display: none;
+	}
+	.menuframebodywrapper#collapse.collapsed .sidemenuIcon:not(.iscollapsed) {
+		display: block;
+	}
+	.menuframebodywrapper#collapse:not(.collapsed) .sidemenuIcon:not(.iscollapsed){
+		display: none;
+	}
+	.menuframebodywrapper#collapse.collapsed .sidemenuIcon.iscollapsed {
+		display: none;
+	}
+	.menuframebodywrapper#collapse:not(.collapsed) .sidemenuIcon.iscollapsed{
+		display: block;
+	}
+	.treeItem {
+		height: 26px;
+		line-height: 26px;
+		padding-left: 34px;
+		position: relative;
+	}
+	.treeItem.empty {
+		opacity: .5;
+	}
+	.treeItem_name.active {
+		font-weight: bold;
+	}
+	#treeRoot {
+		margin: 0px;
+		padding: 0px;
+	}
+	.treeNodeContext {
+		height: 26px;
+		width: 20px;
+		line-height: 26px;
+		text-align: center;
+		position: absolute;
+		font-size: 16px;
+		left: 14px;
+		color: #565656;
+	}
+	.treeNodeCollapse {
+		height: 26px;
+		width: 14px;
+		line-height: 26px;
+		text-align: center;
+		position: absolute;
+		font-size: 12px;
+		color: #565656;
+		left: 0px;
+	}
+	.treeNodeId {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 0px 5px;
+	}
+	.rpcNode_wrapper {
+		padding-left: 14px;
+	}
+	.siteRootFolder {
+		position: relative;
+		height: 26px;
+		line-height: 26px;
+		padding-left: 20px;
+	}
+	.siteRootFolderIcon {
+		height: 26px;
+		width: 20px;
+		position: absolute;
+		left: 0px;
+		line-height: 26px;
+		text-align: center;
+		font-size: 18px;
+		color: #565656;
+	}
+	.rootNode {
+		height: 26px;
+		line-height: 26px;
+	}

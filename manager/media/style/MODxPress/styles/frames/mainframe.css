@@ -1,0 +1,131 @@
+		html, body { margin: 0; padding: 0; width: 100%; height: 100% }
+		body { position: relative; font-family: Ubuntu, Arial, HelveticaNeue, "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif; }
+		#mainMenu, #tree, #main { position: absolute }
+		#mainMenu iframe, #tree iframe, #main iframe, #mask_resizer { position: absolute; width: 100%; height: 100%; }
+		#mainMenu { height: 32px; width: 100%; z-index:1000;}
+		#tree { width: 230px; top: 32px; left: 0; bottom: 0; overflow:hidden;}
+		#main { top: 32px; left: 230px; right: 0; bottom: 0; }
+		#resizer { position: absolute; top: 32px !important; bottom: 0; left: 230px; width: 3px; cursor: col-resize; z-index: 999; borders-left:1px solid #a4b9cc!important;}
+		#resizer #hideMenu {display:block;
+			margin-top:12px;
+			margin: 12px auto;
+			cursor:pointer;
+			background:transparent url(../images/icons/application_side_contract.png)!important;
+			width:16px;
+			height:16px;
+		}
+		#resizer .hidemenuWrapperItem {
+			left: -1px;
+			bottom: 10px;
+			position: absolute;
+			border:1px solid #a4b9cc!important;
+			border-left: none !important;
+			border-radius: 0px 2px 2px 0px;
+			width: 40px;
+			height: 40px;
+			background: #eeeeee url(../images/misc/submenu-bg.png) !important;
+			cursor: pointer !important;
+		}
+		#resizer2 { position: absolute; top: 32px; right: 15px; width: 3px; z-index: 1001; display: none;}
+		#resizer2 #hideTopMenu {
+			display:block;
+			margin: 12px auto;
+			cursor:pointer;
+			background:transparent url(../images/icons/application_get.png)!important;
+			width:16px;
+			height:16px;
+		}
+		#resizer2 .hideTopMenuWrapperItem {
+			right: -7px;
+			top: -1px;
+			position: absolute;
+			border:1px solid #434b58!important;
+			border-top: none !important;
+			border-radius: 0px 2px 2px 0px;
+			width: 40px;
+			height: 40px;
+			background: #eeeeee url(../images/misc/headers.jpg) !important;
+			background-position: -90px -100px !important;
+			cursor: pointer !important;
+		}
+		.modxinfoiteminner {
+			padding-left: 32px;
+			padding-right: 8px;
+			font-size: 12px;
+			line-height: 31px;
+			position: relative;
+		}
+		.submenuContainer {
+			position: absolute;
+			top: -9999999px;
+			width: 240px;
+		}
+		.submenuitem {
+			width: 240px;
+			background: #fff;
+			margin: 0;
+		    padding: 5px 10px;
+		    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.3);
+		    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+		    display: none;
+		    position: absolute;
+		    float: none;
+		    top: 32px;
+		}
+		.submenuitem_left {
+			width: 240px;
+			background: #fff;
+			margin: 0;
+		    padding: 5px 10px;
+		    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+		    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+		    display: none;
+		    position: absolute;
+		    float: none;
+		    left: 45px;
+		}
+		.submenuitemoption {
+			height: 32px;
+			line-height: 32px;
+			font-size: 12px;
+		}
+		.submenuitemoption a {
+			color: #565656 !important;
+			text-decoration: none !important;
+			display: block;
+		}
+		.submenuitem_left:after {
+			content: "";
+			height: 8px;
+			width: 8px;
+			ransform: rotate(45deg) ;
+			-webkit-transform: rotate(45deg) ;
+			-moz-transform: rotate(45deg) ;
+			-o-transform: rotate(45deg) ;
+			-ms-transform: rotate(45deg) ;
+			background: #fff;
+			position: absolute;
+			left: -5px;
+			top: 13px;
+		}
+		.submenuitem_left .menuframebodycontainer {
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+		.submenuitem_left .menuframebodycontainer li {
+			height: 32px;
+			line-height: 32px;
+		}
+		.submenuitem_left .menuframebodycontainer li a {
+			color: #565656 !important;
+			text-decoration: none !important;
+			font-size: 13px;
+			display: block;
+		}
+		#treeHolder span {
+			height: 24px;
+			line-height: 24px;
+			font-size: 14px;
+			cursor: pointer;
+		}

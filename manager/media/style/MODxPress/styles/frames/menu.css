@@ -1,0 +1,134 @@
+#userinfo {
+			z-index: 1000000;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			height: 32px;
+		}
+		#userinfo:hover, #userinfo.active {
+			background: #fff;
+		}
+		.userinfoActivator {
+			padding-right: 36px;
+			padding-left: 10px;
+			position: relative;
+			height: 32px;
+			line-height: 32px;
+			text-align: right;
+			font-size: 12px;
+			cursor: pointer;
+		}
+		.userinfoActivatorAvatar {
+			height: 24px;
+			width: 24px;
+			position: absolute;
+			top: 4px;
+			right: 7px;
+			box-sizing:border-box;
+			overflow: hidden;
+		}
+		.userinfoActivatorAvatar img{
+			height: 24px;
+			width: 24px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			bottom: 0px;
+		}
+		#modxinfo {
+			height: 32px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.modxinfoitem {
+			height: 32px;
+			min-width: 32px;
+			line-height: 32px;
+			float: left;
+			padding:0px;
+			cursor: pointer;
+			margin-right: 5px;
+		}
+		.modxinfoitem a{
+			font-size: 12px !important;
+			font-weight: normal !important;
+			color: #565656 !important;
+			text-decoration: none !important;
+		}
+		#modxinfo .modxinfoitem:hover, #modxinfo .modxinfoitem.active, .userinfoActivator.active {
+			background: #fff;
+		}
+		.modxicon {
+			font-size: 24px;
+			line-height: 32px;
+			width: 42px;
+			text-align: center;
+			color: #949494;
+		}
+		.subicon {
+			font-size: 16px;
+			line-height: 32px;
+			width: 26px;
+			text-align: center;
+			color: #949494;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.modxinfoitem:hover .modxicon, .modxinfoitem:hover .subicon {
+			color: #565656;
+		}
+		.modxinfoiteminner {
+			padding-left: 26px;
+			padding-right: 5px;
+			font-size: 12px;
+			line-height: 31px;
+			position: relative;
+		}
+		.submenuContainer {
+			position: absolute;
+			top: -9999999px;
+			width: 200px;
+		}
+		.submenuitem {
+			width: 200px;
+			background: #fff;
+			margin: 0;
+		    padding: 10px;
+		    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+		    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+		    display: none;
+		    position: absolute;
+		    float: none;
+		}
+		.submenuitemoption {
+			height: 32px;
+			line-height: 32px;
+			font-size: 12px;
+		}
+		.modxinfoiteminner#topbar-container {
+			height: 32px;
+			line-height: 32px;
+			padding: 0px;
+		}
+		.modxinfoitem#modx-container:hover {
+			background: transparent !important;
+		}
+		.modxinfoiteminner#topbar-container #statusbar {
+			height: 32px;
+			line-height: 32px;
+			position: relative;
+			top: 0px;
+		}
+		#tocText, #buildText, #workText {
+			height: 32px;
+			line-height: 32px;
+			font-weight: normal;
+			color: #8E6A6A;
+			margin: 0px;
+		}
+		#tocText img, #buildText img, #workText img {
+			display: none;
+		}
