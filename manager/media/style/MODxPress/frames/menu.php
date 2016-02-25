@@ -76,7 +76,7 @@ $gravatar = !empty($userdata['photo']) ? "/".$userdata['photo'] : get_gravatar($
 					<?php echo $modx->getLoginUserName(); ?>
 				</span>
 				<div class="userinfoActivatorAvatar">
-					<img src="/<?php echo $gravatar; ?>">
+					<img src="<?php echo $gravatar; ?>">
 				</div>
 			</div>
 		</div>
