@@ -12,7 +12,8 @@
 
     <meta http-equiv="content-type" content="text/html; charset=[+modx_charset+]" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 </head>
 <body id="login">

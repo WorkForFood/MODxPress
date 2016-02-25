@@ -18,6 +18,8 @@ if(IN_MANAGER_MODE!="true") die("<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please
 <head>
 	<title>Document Tree</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $modx_manager_charset; ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="media/style/<?php echo $modx->config['manager_theme']; ?>/style.css" />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/fontAwesome.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/icoMoon.css' type='text/css' media='all' />

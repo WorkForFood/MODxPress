@@ -12,10 +12,15 @@ $textdir = $modx_textdir==='rtl' ? 'rtl' : 'ltr';
 <html lang="<?php echo  $mxla;?>" dir="<?php echo  $textdir;?>"><head>
 	<title>MODX</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $modx_manager_charset; ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/fontAwesome.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/icoMoon.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/fonts.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/styles/classic-forms.css" type="text/css" media='all' />
+	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/styles/bootstrapGrid.css" type="text/css" media='all' />
 	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/style.css" type="text/css" media='all' />
+
 
 	<!-- OnManagerMainFrameHeaderHTMLBlock -->
 	<?php echo $onManagerMainFrameHeaderHTMLBlock; ?>
