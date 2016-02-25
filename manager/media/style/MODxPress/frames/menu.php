@@ -8,6 +8,19 @@ $mxla = $modx_lang_attribute ? $modx_lang_attribute : 'en';
 $uid = $modx->getLoginUserID();
 $userdata = $modx->getUserInfo($uid);
 $welcome = "Здравствуйте, ";
+function get_gravatar( $email, $s = 80, $d = 'mm', $r = 'g', $img = false, $atts = array() ) {
+    $url = 'http://www.gravatar.com/avatar/';
+    $url .= md5( strtolower( trim( $email ) ) );
+    $url .= "?s=$s&d=$d&r=$r";
+    if ( $img ) {
+        $url = '<img src="' . $url . '"';
+        foreach ( $atts as $key => $val )
+            $url .= ' ' . $key . '="' . $val . '"';
+        $url .= ' />';
+    }
+    return $url;
+}
+$gravatar = !empty($userdata['photo']) ? "/".$userdata['photo'] : get_gravatar($userdata['email']);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html <?php echo ($modx_textdir ? 'dir="rtl" lang="' : 'lang="').$mxla.'" xml:lang="'.$mxla.'"'; ?>>
@@ -63,7 +76,7 @@ $welcome = "Здравствуйте, ";
 					<?php echo $modx->getLoginUserName(); ?>
 				</span>
 				<div class="userinfoActivatorAvatar">
-					<img src="/<?php echo $userdata['photo'] ?>">
+					<img src="/<?php echo $gravatar; ?>">
 				</div>
 			</div>
 		</div>
