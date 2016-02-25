@@ -71,6 +71,7 @@
 		    position: absolute;
 		    float: none;
 		    top: 32px;
+		    z-index: 100;
 		}
 		.submenuitem_left {
 			width: 240px;
