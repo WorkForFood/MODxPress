@@ -86,11 +86,14 @@ h1, h2, h3, h4, h5, h6, .subTitle {
 }
 h1 {
     color:#565656;
-    margin: 7px 15px 0px 15px;
+    //margin: 7px 15px 0px 15px;
     font-size: 23px;
     font-weight: 400;
-    padding: 9px 15px 4px 0;
+    //padding: 9px 15px 4px 0;
     line-height: 29px;
+    padding: 15px;
+    margin: 0px 15px;
+    margin-bottom: 5px;
 }
 	.rtl h1 {
 		margin-right: 10px;
@@ -254,8 +257,10 @@ form label {
 	cursor: pointer;
 }
 fieldset {
-	border: none;
+	border: none !important;
 }
+
+/*
 input, select, textarea, option, optgroup, td {
 	font: inherit;
 	color: inherit;
@@ -505,9 +510,13 @@ input.submit {
 .sectionHeader, .showHideVisible {
     color:#000;
     font-size:20px;
-    padding: 3px 11px 0;
+    padding: 10px;
+    margin: 0px 15px;
     position:relative;
     min-height: 25px;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+    background: #EAEAEA;
 }
 .sectionHeader span, .showHideVisible span{
 	font-weight: normal;
@@ -518,6 +527,9 @@ input.submit {
 }
 	.tab-page .sectionHeader {
 		margin: 2px 3px 0px;
+    	background: #fff;
+    	border: none;
+    	padding-bottom: 0px;
 	}
 	.rtl .sectionHeader {
 		direction: rtl;
@@ -1068,28 +1080,6 @@ a.hometblink:hover {
 @media (max-width: 940px) {
   #searchform {display:none;}
 }
-#searchform input[type=text]{
-	margin-top: 35px;
-	height: 29px;
-	width: 55px;
-	box-shadow: -2px 2px 5px rgba(0,0,0,0.4) inset;
-	-moz-box-shadow: -2px 2px 5px rgba(0,0,0,0.4) inset;
-	-webkit-box-shadow: -2px 2px 5px rgba(0,0,0,0.4) inset;
-	border-radius: 25px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 5px;
-	transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-webkit-transition-duration: 0.3s;
-	border: none;
-	background: rgba(0,0,0,0.3);
-	color: white;
-	text-align: center;
-}
-#searchform input[type=text]:focus{
-	width: 200px;
-	text-align: left;
-}
 
 /* -------------------------[ Contextual Menu used in the Tree Menu ]--- */
 #mx_contextmenu {
@@ -1635,6 +1625,7 @@ form#mutate dt h3.label {
 form#mutate dd {
 	margin-left: 210px;
 }
+/*
 form#mutate input.disabled {
 	background-color: #f5f5f5 !important;
 }
@@ -1666,7 +1657,7 @@ form#mutate textarea.tv_textarea {
 	width: 100%;
 	overflow-y: scroll;
 }
-
+*/
 /*
 * Styling for datepicker elements in settings and templavars
 */
