@@ -10,6 +10,7 @@ class Render {
 
     public function __construct () {
         $this->debug = false;
+        $this->fileRegister = Array();
     }
 
     function getFileContents($file) {
