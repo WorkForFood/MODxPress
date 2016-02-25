@@ -57,7 +57,7 @@ $modx_textdir = isset($modx_textdir) ? $modx_textdir : null;
 	</script>
 	<title><?php echo $site_name?> - (MODX CMS Manager)</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $modx_manager_charset?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/frames/mainframe.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="media/style/<?php echo $modx->config['manager_theme']; ?>/style.css" />
