@@ -17,8 +17,10 @@ $textdir = $modx_textdir==='rtl' ? 'rtl' : 'ltr';
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/fontAwesome.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/icoMoon.css' type='text/css' media='all' />
 	<link rel='stylesheet' href='media/style/<?php echo $modx->config['manager_theme']; ?>/styles/fonts.css' type='text/css' media='all' />
+	<!--
 	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/styles/classic-forms.css" type="text/css" media='all' />
 	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/styles/bootstrapGrid.css" type="text/css" media='all' />
+	-->
 	<link rel="stylesheet" href="media/style/<?php echo $modx->config['manager_theme']; ?>/style.css" type="text/css" media='all' />
 
 
