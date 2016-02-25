@@ -261,12 +261,36 @@ fieldset {
 }
 input[type="button"],
 input[type="submit"] {
+background:#ededed;
 	-webkit-appearance: none;
 	-moz-appearance: none;
     -o-appearance: none;
     appearance: none;
+	border: 1px solid green;
+	cursor: pointer;
+	line-height: normal;
+	margin: 0 5px 3px 0;
+	padding: 4px 10px;
+	overflow: visible;
+	min-height: 27px;
+	-webkit-appearance: button;
+	background:-moz-linear-gradient(#f5f5f5, #DDDDDD);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#DDDDDD));
+	background:-o-linear-gradient(#f5f5f5, #DDDDDD);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f5f5f5,endColorstr=#DDDDDD); zoom:1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
 }
-/*
+input[type="button"]:hover,
+input[type="submit"] {
+	border-color: green;
+	background:-moz-linear-gradient(#FFFFFF, #EEEEEE);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#EEEEEE));
+	background:-o-linear-gradient(#FFFFFF, #EEEEEE);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#EEEEEE); zoom:1;
+}
+
 input, select, textarea, option, optgroup, td {
 	font: inherit;
 	color: inherit;
@@ -354,14 +378,37 @@ select:focus
 	border-style: solid;
 	border-width: 1px;
 }
-	input[type="button"]:hover,
-	input[type="submit"] {
-		border-color: green;
-		background:-moz-linear-gradient(#FFFFFF, #EEEEEE);
-		background:-webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#EEEEEE));
-		background:-o-linear-gradient(#FFFFFF, #EEEEEE);
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#EEEEEE); zoom:1;
-	}
+input[type="button"],
+input[type="submit"] {
+background:#ededed;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+	border: 1px solid green;
+	cursor: pointer;
+	line-height: normal;
+	margin: 0 5px 3px 0;
+	padding: 4px 10px;
+	overflow: visible;
+	min-height: 27px;
+	-webkit-appearance: button;
+	background:-moz-linear-gradient(#f5f5f5, #DDDDDD);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#DDDDDD));
+	background:-o-linear-gradient(#f5f5f5, #DDDDDD);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f5f5f5,endColorstr=#DDDDDD); zoom:1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+input[type="button"]:hover,
+input[type="submit"] {
+	border-color: green;
+	background:-moz-linear-gradient(#FFFFFF, #EEEEEE);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#EEEEEE));
+	background:-o-linear-gradient(#FFFFFF, #EEEEEE);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#EEEEEE); zoom:1;
+}
 
 input.checkbox,
 input.radio,
