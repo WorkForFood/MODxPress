@@ -37,7 +37,11 @@
 			<label for="rememberme" style="cursor:pointer" class="remtext"><input type="checkbox" id="rememberme" name="rememberme" tabindex="4" value="1" class="checkbox fa" [+remember_me+] />[+remember_username+]</label>
             <input type="submit" class="login" id="submitButton" value="[+login_button+]" />
             <div style="clear:both;"></div>
-            <!-- anything to output before the login box via a plugin ... like the forgot password link? -->
+            <div style="padding-top: 20px;">
+                <!-- anything to output before the login box via a plugin ... like the forgot password link? -->
+                [+OnManagerLoginFormRender+]
+                <div style="clear:both;"></div>
+            </div>
         </div>
         <div class="sectionBody" style="display: none;">
         	[+OnManagerLoginFormRender+]
