@@ -172,6 +172,7 @@ jQuery.noConflict();
 		    	return false;
 	    	})
 	    }
+
 	    bindOptionsToMain = function () {
 	    	$maincontents.find("body").css({"background":"#fff"});
 	        $maincontents.find(".dropdownActivatorInsert").on("ontouchend touchend", function () {
@@ -220,6 +221,10 @@ jQuery.noConflict();
 	                $maincontents.find(".dropdownActivatorInsert").removeClass("active");
 	            }
 	        });
+	        setTimeout(function() {
+	        	$maincontents.find(".tab-page .tabIntro").siblings("table").wrap("<div class='tabIntroTableWrapper pf_form'></div>");
+	        	//$maincontents.find(".tabIntroTableWrapper").append()
+	        },1000)
 	    }
 	    bindOptionsToMainMenu = function () {
 	    	$openSubMenu.bind("click touchstart", function () {

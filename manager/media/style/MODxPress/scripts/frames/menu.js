@@ -152,6 +152,8 @@
 	// GENERAL FUNCTIONS - Work
 	// These functions are used for showing the user the system is working
 	function work() {
+		top.tree.ca = "open";
+		top.ca = "open";
 		var elm = $('workText');
 		if (elm) elm.innerHTML = window.globalVars.workInner;
 		else w=window.setTimeout('work()', 50);
