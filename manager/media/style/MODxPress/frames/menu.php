@@ -41,11 +41,11 @@ $gravatar = !empty($userdata['photo']) ? "/".$userdata['photo'] : get_gravatar($
 			"defaultFrameWidth": '<?php echo !$modx_textdir ? '260,*' : '*,260'?>',
 			"userDefinedFrameWidth": '<?php echo !$modx_textdir ? '260,*' : '*,260'?>',
 			"updateMail_periodical": <?php echo $modx->config['mail_check_timeperiod'] * 1000 ?>,
-			"updateMail_image": "<img src='<?php echo $_style['show_tree']?>' alt='<?php echo $_lang['show_tree']?>' width='16' height='16' />",
-			"reloadTreeInner": "<?php echo $_lang['loading_doc_tree']?>",
-			"reloadMenuInner": "<?php echo $_lang['loading_menu']?>",
+			"updateMail_image": "<img src='<?php echo $_style['show_tree']?>' alt='<?php echo addslashes($_lang['show_tree'])?>' width='16' height='16' />",
+			"reloadTreeInner": "<?php echo addslashes($_lang['loading_doc_tree'])?>",
+			"reloadMenuInner": "<?php echo addslashes($_lang['loading_menu'])?>",
 			"startrefresh_10": "<?php echo MGR_DIR;?>",
-			"workInner": "<?php echo $_lang['working']?>"
+			"workInner": "<?php echo addslashes($_lang['working'])?>"
 		};
 	</script>
 	<!--[if lt IE 7]>
